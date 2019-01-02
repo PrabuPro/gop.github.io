@@ -1,0 +1,168 @@
+.book-table{
+    height: 60rem;
+    // background-image: url(/img/banner.jpeg);
+    background-image: linear-gradient(90deg,
+                    rgba($color-white, 1) 50%,
+                    rgba($color-white, .9) 0%,
+                    transparent 50%),
+                    url(../img/restaurent.jpg);
+    background-size: cover;
+     background-position: top;
+    // border-radius: 3px;
+    // box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    position: relative;
+
+     @include respond(tab-land) {
+        background-image: linear-gradient(90deg,
+                        rgba($color-white, 1) 60%,
+                        rgba($color-white, .9) 0%,
+                        transparent 50%),
+                        url(../img/restaurent.jpg);
+     }
+     @include respond(tab-port) {
+        background-image: none;
+        background-color: $color-white;
+     }
+
+     &__label{
+        font-size: 1.45rem !important;
+        color: $color-black !important;
+        font-weight: 600 !important;
+
+        @include respond(tab-land) {
+           font-size: 1.2rem !important;
+        }
+        
+     }
+
+     &__button{
+        display: flex;
+        justify-content: center;
+        margin: 3rem auto 0 auto;
+        background-color: $color-white;
+        padding-bottom: 2rem;
+    }
+     &__button-2{
+        display: flex;
+        justify-content: center;
+        margin: 3rem auto 0 auto;
+        padding-bottom: 2rem;
+    }
+
+     &__box{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         width: 50rem;
+         height: 50rem;
+
+         @include respond(tab-land) {
+             width: 100%;
+             padding: 2rem;
+         }
+     }
+     &__box-2{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         height: 50rem;
+
+         @include respond(tab-land) {
+             width: 100%;
+             padding: 2rem;
+         }
+     }
+
+    &__title{
+        font-size: 5rem;
+        font-weight: 600;
+        color: $color-black;
+        margin-bottom: 3rem;
+        margin-top: 10rem;
+        
+        @include respond(tab-port) {
+            margin-left: 0rem !important;
+        }
+        @include respond(tab-land){
+            margin-left: 10rem;
+        }
+
+    }
+
+    &__form{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        // position: absolute;
+        // top: 15rem;
+        // left: 10rem;
+        // width: 50rem;
+
+        @include respond(tab-land) {
+        
+        }
+    }
+    &__form-2{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+
+        @include respond(tab-land) {
+        
+        }
+    }
+}
+
+.input-field{
+    margin: 2rem 2rem !important;
+
+    &__contact-us{
+        width: 50rem !important;
+
+        @include respond(tab-port) {
+            width: 20rem !important;
+        }
+    }
+
+    &__message {
+        padding-top: 15rem;
+    }
+    
+}
+.input-field-3{
+    width: 40rem;
+
+    @include respond(tab-port) {
+        width: 20rem;
+    }
+}
+
+.form-rows{
+    display: flex;
+    justify-content: space-around;
+    // align-content: space-between;
+}
+.form-rows-2{
+    display: flex;
+    justify-content: space-around;
+    width: 40rem;
+    // align-content: space-between;
+}
+
+.form{
+    background-color: $color-white !important;
+}
+.form-2{
+    width: 80rem;
+
+    @include respond(tab-land){
+        width: 40rem;
+    }
+}
+
+.materialize-textarea{
+    height: 15rem !important;
+}

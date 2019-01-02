@@ -1,0 +1,28 @@
+.intro-box{
+    padding: 0;
+    margin: 8rem 4rem;
+    &__title{
+        color: $color-black;
+        font-size: 4rem;
+        text-transform: uppercase;
+        letter-spacing: .4rem;
+        font-weight: 600;
+    }
+    
+    &__para{
+        color: $color-black;
+        text-align: justify;
+    }
+
+    &__img{
+        background-image: url(../img/intro.jpeg);
+        background-size: cover;
+        height: 40rem;
+        max-width: 40rem;
+        margin: auto;
+
+        @include respond(tab-land){
+            display: none;
+        }
+    }
+}
