@@ -31,5 +31,12 @@
         color: $color-primary-dark;
     }
 
-
+    @include respond(tab-land){
+        &:hover{
+            transform: translateY(0) scale(1);
+            color: inherit;
+        }
     }
+
+
+}

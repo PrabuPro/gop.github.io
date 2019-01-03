@@ -1335,7 +1335,11 @@ h1 {
   transition: all .2s; }
   @media (max-width: 75em) {
     .feature-box {
-      margin: 3rem; } }
+      margin: 3rem; } 
+    .feature-box:hover{
+      transform: translateY(0) scale(1);
+      color: inherit;
+    }}
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
