@@ -44,7 +44,7 @@
 .navigation__list {
   display: flex;
   flex-direction: column;
-  margin-top: 10rem;
+  margin-top: 7rem;
   list-style: none;
   text-align: center;
   width: 100%;
