@@ -850,6 +850,7 @@ body {
 .book-now-btn:hover {
   background-color: #DB4E42;
   animation-play-state: paused;
+  
 }
 
 @keyframes booknow {
